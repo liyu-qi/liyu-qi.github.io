@@ -10,7 +10,7 @@ Tag: compatible_min::ios14.0
 Installed-Size: 14899
 Package: ws.hbang.lizinewterm
 Icon: https://img.chariz.cloud/icon/newterm-beta/icon@3x.png
-Filename: ./debs/ws.hbang.lizinewterm_3.0~beta1_iphoneos-arm64.deb
+Filename: https://github.com/liyu-qi/liyu-qi.github.io/blob/master/debs/ws.hbang.lizinewterm_3.0~beta1_iphoneos-arm64.deb
 
 Package: com.opa334.altlist
 Version: 1.0.10
