@@ -8,15 +8,58 @@
   <meta property="og:image" content="apple.jpg">
 </head>
 <body>
+	<div id="navbar">
+  <ul>
+    <li><a href="#home">主页</a></li>
+    <li><a href="#jailbreak">越狱</a></li> 
+    <li><a href="#about">关于</a></li>
+  </ul>
+</div>
+
+<div class="content">
+  <h2 id="home">欢迎来到我们的网站</h2>
 	<h1>这里是玩游戏的李子的博客 <a href="https://b23.tv/9fAhpgB">
 <img border="0" src="53E73DEF-E211-4876-B323-5AF6AAE5EB38.png" width="84" height="32"></a></p> </h1>
-	<h2>meowbrek2是一款无根越狱工具支持iOS15.x（A11及以下），无需电脑引导，只需要用trollstore安装即可。现在使用的是李子更改过的终端版本的meow越狱<a href="https://github.com/liyu-qi/liyu-qi.github.io/releases/download/meow-NewTerm3beta/meow_1.1.7-NewTerm3.beta.ipa">点击下载</a><br><br> </h2>
-	<h3>释放你的设备        
-		<a href="https://github.com/liyu-qi/liyu-qi.github.io/releases">meowbrek历史版本</a><br><br></h3>
+
+  <h2 id="about">关于李子</h2>
+  <p>我是一个热爱越狱和开发的一个中学生</p>
+
+  <h2 id="jailbreak">越狱</h2>
+  <h1>meowbrek2是一款无根越狱工具支持iOS15.x（A11及以下），无需电脑引导，只需要用trollstore安装即可。现在使用的是李子更改过的终端版本的meow越狱<a href="https://github.com/liyu-qi/liyu-qi.github.io/releases/download/meow-NewTerm3beta/meow_1.1.7-NewTerm3.beta.ipa">点击下载</a><br><br> </h3>
+	<h2>释放你的设备        
+		<a href="https://github.com/liyu-qi/liyu-qi.github.io/releases">meowbrek历史版本</a><br><br></h2>
 	<p>李子源</p>
 	<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://liyu-qi.github.io/">添加Cydia</a><br><br>
 	<a href="sileo://source/https://liyu-qi.github.io/">添加Sileo</a><br><br>
 	<a href="zbra://sources/add/https://liyu-qi.github.io/">添加Zebra</a>
+</div>
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  z-index: 100;
+  transition: opacity 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+}
+.sticky {
+  position: fixed;
+  top: -60px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  z-index: 100;
+}
+
+.fixed {
+  top: 0;
+}
 </body>
 
 </html>
