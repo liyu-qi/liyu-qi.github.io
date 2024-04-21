@@ -1,8 +1,8 @@
-Author: 玩游戏的李子- <bilibili.com>
+Author: 玩游戏的李子
 Architecture: iphoneos-arm64
-Maintainer: 玩游戏的李子- <bilibili.com>
+Maintainer: 玩游戏的李子
 Description: newterm3中文版(带theos包，无sdk)
-Version: 3.0~beta1
+Version: 3.0
 Depends: firmware (>= 14.0), zsh | bash | fish, coreutils, ncurses, system-cmds
 Section: Terminal Support
 Name: newterm3中文版(带theos包)
@@ -10,7 +10,7 @@ Tag: compatible_min::ios14.0
 Installed-Size: 14899
 Package: ws.hbang.lizinewterm
 Icon: https://img.chariz.cloud/icon/newterm-beta/icon@3x.png
-Filename: https://github.com/liyu-qi/liyu-qi.github.io/blob/master/debs/ws.hbang.lizinewterm_3.0~beta1_iphoneos-arm64.deb
+Filename: ./debs/ws.hbang.lizinewterm_3.0_iphoneos-arm64.deb
 
 Package: com.opa334.altlist
 Version: 1.0.10
