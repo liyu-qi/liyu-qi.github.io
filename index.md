@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -22,7 +21,7 @@
 <img border="0" src="53E73DEF-E211-4876-B323-5AF6AAE5EB38.png" width="84" height="32"></a></h1>
 
   <h2 id="jailbreak">越狱</h2>
-  <a href="https://liyu-qi.github.io/Dopamine-jailbreak/">Dopamine</a>
+  <a href="https://liyu-qi.github.io/Dopamine-jailbreak/">Dopamine</a>  
   <a href="https://liyu-qi.github.io/meowbrek-jailbreak/">meowbrek2</a>
 	<p>李子源</p>
 	<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://liyu-qi.github.io/">添加Cydia</a><br><br>
