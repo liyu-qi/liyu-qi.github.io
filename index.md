@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>李子的博客</title>
+李子的博客
 <link rel="icon" href="apple.jpg" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="apple.jpg">
@@ -19,12 +19,11 @@
 <div class="content">
   <h2 id="home">你好，发烧友</h2>
 	<h1>这里是玩游戏的李子的博客 <a href="https://b23.tv/9fAhpgB">
-<img border="0" src="53E73DEF-E211-4876-B323-5AF6AAE5EB38.png" width="84" height="32"></a></p> </h1>
+<img border="0" src="53E73DEF-E211-4876-B323-5AF6AAE5EB38.png" width="84" height="32"></a></h1>
 
   <h2 id="jailbreak">越狱</h2>
-  <h1>meowbrek2是一款无根越狱工具支持iOS15.x（A11及以下），无需电脑引导，只需要用trollstore安装即可。现在使用的是李子更改过的终端版本的meow越狱<a href="https://github.com/liyu-qi/liyu-qi.github.io/releases/download/meow-NewTerm3beta/meow_1.1.7-NewTerm3.beta.ipa">点击下载</a><br><br> </h3>
-	<h2>释放你的设备        
-		<a href="https://github.com/liyu-qi/liyu-qi.github.io/releases">meowbrek历史版本</a><br><br></h2>
+  <a href="https://liyu-qi.github.io/Dopamine-jailbreak/">Dopamine</a>
+  <a href="https://liyu-qi.github.io/meowbrek-jailbreak/">meowbrek2</a>
 	<p>李子源</p>
 	<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://liyu-qi.github.io/">添加Cydia</a><br><br>
 	<a href="sileo://source/https://liyu-qi.github.io/">添加Sileo</a><br><br>
