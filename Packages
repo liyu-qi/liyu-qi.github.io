@@ -6,6 +6,7 @@ Section: Repository
 Priority: optional
 Description: 一个为无根越狱准备的插件源
 Name: 整合插件源
+Filename: ./debs/jailbreak.lizi.repo_1.0_iphoneos-arm64.deb
 
 Package: lizi.newterm.cn
 Version: 1.0
@@ -15,6 +16,7 @@ Section: Repository
 Priority: optional
 Description: 中文汉化插件
 Name: NewTerm3汉化
+Filename: ./debs/lizi.newterm.cn_1.0_iphoneos-arm64.deb
 
 Package: ws.hbang.newterm3
 Section: Terminal Support
@@ -27,6 +29,7 @@ Author: HASHBANG Productions <support@hbang.ws>
 Name: NewTerm3
 Icon: https://img.chariz.cloud/icon/newterm-beta/icon@3x.png
 Tag: compatible_min::ios14.0
+Filename: ./debs/ws.hbang.newterm3_3.0_iphoneos-arm64.deb
 
 Author: 玩游戏的李子
 Architecture: iphoneos-arm64
