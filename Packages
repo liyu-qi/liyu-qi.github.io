@@ -1,9 +1,38 @@
+Package: jailbreak.lizi.repo
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 玩游戏的李子-
+Section: Repository
+Priority: optional
+Description: 一个为无根越狱准备的插件源
+Name: 整合插件源
+
+Package: lizi.newterm.cn
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 玩游戏的李子-
+Section: Repository
+Priority: optional
+Description: 中文汉化插件
+Name: NewTerm3汉化
+
+Package: ws.hbang.newterm3
+Section: Terminal Support
+Installed-Size: 14899
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Architecture: iphoneos-arm64
+Version: 3.0
+Description: 它是个终端
+Author: HASHBANG Productions <support@hbang.ws>
+Name: NewTerm3
+Icon: https://img.chariz.cloud/icon/newterm-beta/icon@3x.png
+Tag: compatible_min::ios14.0
+
 Author: 玩游戏的李子
 Architecture: iphoneos-arm64
 Maintainer: 玩游戏的李子
 Description: newterm3中文版(带theos包，无sdk)
 Version: 3.0
-Depends: firmware (>= 14.0), zsh | bash | fish, coreutils, ncurses, system-cmds
 Section: Terminal Support
 Name: newterm3中文版(带theos包)
 Tag: compatible_min::ios14.0
