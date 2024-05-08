@@ -3,28 +3,42 @@ Version: 1.0
 Architecture: iphoneos-arm64
 Maintainer: 玩游戏的李子-
 Filename: debs/jailbreak.lizi.repo_1.0_iphoneos-arm64.deb
-Size: 2096
-MD5sum: b556338eb1b9cba80381cf4a5de585a1
-SHA1: 1daed825e01691933dffe7f6686aa82989bca90c
-SHA256: 8fb510f762ef2abc4e6c35c9e953adf5b67c8d3dfc5d8b1359f00fc092c54c5b
-Section: Repository
+Size: 2092
+MD5sum: ef04e9d8b532b61d7884f7fc4ff012bf
+SHA1: bb014ef498340e6c346a8a4cc07a893d2435a37d
+SHA256: 7eb485da1b9d2ccb1f6ac01f4f1c1370827821f7f9e5ecc94994442b72df3eb5
+Section: 插件源
 Priority: optional
 Description: 一个为无根越狱准备的插件源
 Name: 整合插件源
+
+Package: lizi.ftt.cn
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 玩游戏的李子-
+Filename: debs/lizi.ftt.cn_1.0_iphoneos-arm64.deb
+Size: 42804
+MD5sum: a596fbce829226213c6a3559e80b4aa3
+SHA1: 2dd7d8f97e7098ec061e0030501d84eaf8575405
+SHA256: 0286d37130bf05c3ffa36c4d29947d2cd53498569c532996ceb7082d7b6173c3
+Section: 终端支持
+Priority: optional
+Description: flex to theos
+Name: ftt汉化
 
 Package: lizi.newterm.cn
 Version: 1.0
 Architecture: iphoneos-arm64
 Maintainer: 玩游戏的李子-
 Filename: debs/lizi.newterm.cn_1.0_iphoneos-arm64.deb
-Size: 43876
-MD5sum: 6afb5bd240fbe17b4ae0968bce1216ff
-SHA1: 64d908d51e3b4f83d5ad32a7f4cc843840bff994
-SHA256: 75ba5bdef2955619fcb550c7ea003dd1cb6bdd4b9dfc2988338f0a2781f639b1
-Section: Repository
+Size: 1856
+MD5sum: 162be5da4718dd322d6996a31e91ff91
+SHA1: f65ab28f125535b53d5fb2fa884d699974af83cb
+SHA256: 28133e87e958fe93033c0ccf712d46ab0f252e1947409267e771ce6be9743dd6
+Section: 汉化
 Priority: optional
 Description: 中文汉化插件
-Name: NewTerm3汉化
+Name: NewTerm3汉化（先装NewTerm）
 
 Package: ws.hbang.lizinewterm
 Version: 3.0
@@ -33,12 +47,12 @@ Maintainer: 玩游戏的李子- <bilibili.com>
 Installed-Size: 14899
 Depends: firmware (>= 14.0), zsh | bash | fish, coreutils, ncurses, system-cmds
 Filename: debs/ws.hbang.lizinewterm_3.0_iphoneos-arm64.deb
-Size: 18539600
-MD5sum: d9197a12ada50e155854679161fa3be0
-SHA1: 8beb644f5c1b572f108f35a0696f9af4c997a94f
-SHA256: 6f8f7f709c03e3edd5e8f546365f8094ec19544250e91c6e3d361306a69a601c
-Section: Terminal Support
-Description: newterm3中文版(带theos包，无sdk)
+Size: 18541260
+MD5sum: 8d9712cba288d6611c70aabb58f7f8e0
+SHA1: d3b3554e90799531789a3646b2d718009951f744
+SHA256: ba5de37ac7bac8028aa22922fd6b935e7f0b0b3cf1a90770c5ad02db8ae50a56
+Section: 终端
+Description: newterm3中文版(带theos包，无sdk)，李子博客上找教程
 Tag: compatible_min::ios14.0
 Author: 玩游戏的李子- <bilibili.com>
 Icon: https://img.chariz.cloud/icon/newterm-beta/icon@3x.png
@@ -50,11 +64,11 @@ Architecture: iphoneos-arm64
 Maintainer: HASHBANG Productions <support@hbang.ws>
 Installed-Size: 14899
 Filename: debs/ws.hbang.newterm3_3.0_iphoneos-arm64.deb
-Size: 3838516
-MD5sum: 6da009cd4996c42e2e542ccb5b878afb
-SHA1: 942a05706834059d66b6bafe76959ae1ff1335a6
-SHA256: 1d0c6279feadbc2c7226b960547f4a146f601504cd467548be05cc7f0b32cac3
-Section: Terminal Support
+Size: 3836936
+MD5sum: d0ee0c249984d24f82524cce2f18a691
+SHA1: d2a42ca500ebccf7ff215f3dffd2fa5a8b1004cc
+SHA256: 458102b4e18e8b2ede4f60f9ee7ef35abefcacbec9f32c18278f242592c7539b
+Section: 终端
 Description: 它是个终端
 Tag: compatible_min::ios14.0
 Author: HASHBANG Productions <support@hbang.ws>
