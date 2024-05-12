@@ -19,6 +19,7 @@
   <p id="home">你好，发烧友</p>
 	<p>这里是玩游戏的李子的博客 <a href="https://b23.tv/9fAhpgB">
 <img border="0" src="53E73DEF-E211-4876-B323-5AF6AAE5EB38.png" width="84" height="32"></a></p>
+  <a href="https://github.com/liyu-qi/liyu-qi.github.io/releases/download/%E6%9D%8E%E5%AD%90%E6%A1%8C%E9%9D%A2%E7%89%88/default.mobileconfig">李子官网桌面版点击安装不迷路</a><br>
 
   <h2 id="jailbreak">越狱</h2>
   <a href="https://liyu-qi.github.io/Dopamine-jailbreak/">Dopamine专区iOS15-16.6.1</a><br>
