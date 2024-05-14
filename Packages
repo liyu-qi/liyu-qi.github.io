@@ -156,11 +156,11 @@ Conflicts: org.theos.dependencies
 Replaces: org.theos.dependencies
 Provides: org.theos.dependencies
 Filename: debs/theos-dependencies_0-1_all.deb
-Size: 848
-MD5sum: 955a85e1f8f8c5eca164844fdfc6dbdf
-SHA1: aaa517e468f7818f97f76b7c7b53326865c6cfe7
-SHA256: 42290f906d7b76cfc7e1301434418c48de71ab004cd2845d4d9b540a110562ee
-Section: 插件
+Size: 856
+MD5sum: 9bd9351270282106ad2f07c3d62f219c
+SHA1: 92f4a1354337cd84ff923c2975ff33258b2e5f16
+SHA256: e2fc9fbfd0a19e4bac4a0b4705f15409347e805bf5ffcc5c0c3d1e8c3dccdbb1
+Section: 插件开发
 Priority: optional
 Description: What Theos needs.
 Name: Theos依赖

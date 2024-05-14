@@ -5,7 +5,7 @@ Version: 0-1
 Priority: optional
 Depends: clang, odcctools, curl, git, grep, perl, rsync, unzip, xz-utils, make, ldid
 Architecture: all
-Section: 插件
+Section: 插件开发
 Conflicts: org.theos.dependencies
 Description: What Theos needs.
 Name: Theos依赖
