@@ -68,6 +68,26 @@ Icon: https://invalidunit.github.io/sileodepiction/Default/image_terminal.png
 Name: mount_bindfs (Dopamine)
 Sileodepiction: https://invalidunit.github.io/sileodepiction/com.nan.bindfs/js.json
 
+Package: com.ryannair05.cask3
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: Ryan Nair <ryannairtweaks@gmail.com>
+Installed-Size: 862
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 14.0)
+Replaces: com.ryannair05.cask2
+Filename: debs/Cask3.1.0.2.deb
+Size: 321592
+MD5sum: fa37903f894a8ca6be5ace3c66a1ae2e
+SHA1: c8e01c6d98e7417c127bd67d86f6d6ac3efb154b
+SHA256: 2ecf9b576cfba135cb8fa79f1eaa141bfe2f1a7a3b8eab5792bd7216d743b619
+Section: Tweaks
+Description: Animated table scrolling
+Tag: compatible_min::ios14.0
+Author: Ryan Nair <ryannairtweaks@gmail.com>
+Depiction: https://chariz.com/get/cask-3
+Icon: https://img.chariz.cloud/icon/cask-3/icon@3x.png
+Name: Cask 3
+
 Package: ellekit
 Version: 1.1.2
 Architecture: iphoneos-arm64
@@ -179,6 +199,48 @@ Section: Tweaks
 Description: 适合xina和多巴胺越狱的插件及其配置的一键备份恢复工具。Filza进入/var/mobile/tweak_tool/目录，运行“一键备份和恢复工具.sh”文件即可。
 Author: 预言小猫
 Name: 一键备份和恢复工具-Rootless
+
+Package: ws.hbang.alderis
+Version: 1.2.3
+Architecture: iphoneos-arm64
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Installed-Size: 2463
+Depends: firmware (>= 12.0), firmware (>= 12.2) | org.swift.libswift (>= 5.0), uikittools
+Replaces: org.thebigboss.libcolorpicker, me.nepeta.libcolorpicker
+Provides: org.thebigboss.libcolorpicker (= 99.0), me.nepeta.libcolorpicker (= 99.0)
+Filename: debs/ws.hbang.alderis_1.2.3_iphoneos-arm64.deb
+Size: 290856
+MD5sum: 73b8a9a608f3761f3ea8484e6d9f8562
+SHA1: 2e1144e4d4b1c73af66882453d886e86ff79f506
+SHA256: 278ce24cf1c8121a806f2d753686173c9ce43ffb16809bab395e723bf8c82bd2
+Section: 插件开发
+Description: Color picker support library for tweaks
+Tag: role::developer, compatible_min::ios12.0
+Author: HASHBANG Productions <support@hbang.ws>
+Depiction: https://chariz.com/get/alderis
+Icon: https://img.chariz.cloud/icon/alderis/icon@3x.png
+Name: Alderis Color Picker
+Support: https://hashbang.productions/support/
+
+Package: ws.hbang.common
+Version: 2.0
+Architecture: iphoneos-arm64
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Installed-Size: 3132
+Depends: firmware (>= 15.0)
+Filename: debs/ws.hbang.common_2.0_iphoneos-arm64.deb
+Size: 198952
+MD5sum: ce246d31a7fccbd566f7e18f0c0e4027
+SHA1: c9c6adc35d70ce562f89e81ecc30162681a698da
+SHA256: 03757af55be10b143a8641d39f1a81717a1bea8da8f38bcbc9dfb68947f7afb0
+Section: 插件开发
+Description: Support library for tweaks
+Tag: role::developer, compatible_min::ios15.0
+Author: HASHBANG Productions <support@hbang.ws>
+Depiction: https://chariz.com/get/cephei
+Icon: https://img.chariz.cloud/icon/cephei/icon@3x.png
+Name: Cephei Tweak Support
+Support: https://hashbang.productions/support/
 
 Package: ws.hbang.lizinewterm
 Version: 3.0
