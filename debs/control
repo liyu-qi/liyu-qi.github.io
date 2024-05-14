@@ -1,0 +1,14 @@
+Recommends: plutil, swift
+Maintainer: Procursus Team <support@procurs.us>
+Provides: org.theos.dependencies
+Version: 0-1
+Priority: optional
+Depends: clang, odcctools, curl, git, grep, perl, rsync, unzip, xz-utils, make, ldid
+Architecture: all
+Section: 插件
+Conflicts: org.theos.dependencies
+Description: What Theos needs.
+Name: Theos依赖
+Installed-Size: 0
+Package: theos-dependencies
+Replaces: org.theos.dependencies

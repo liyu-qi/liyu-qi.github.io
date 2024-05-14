@@ -76,11 +76,11 @@ Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mo
 Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
 Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
 Filename: debs/ellekit_1.1.2_iphoneos-arm64.deb
-Size: 337300
-MD5sum: e4928b2f2cdcae304ae13d289bb7ad9e
-SHA1: c66d6f0763218d02f89b89055720dc2478b5e987
-SHA256: 29e949c48e01025bb8e3c2d5829445260b2b7bd7b9a586a59a65d56c1c869e6b
-Section: Tweak
+Size: 337380
+MD5sum: f5728275da8e473c6192ed463be4746a
+SHA1: aa7e1376d51385d1b0b0b7e1de44cc6f4d038eb3
+SHA256: dfc14014715ce03580b7707de61bfc23b0fce40909340d46fcaace2a638da515
+Section: 插件
 Priority: optional
 Description: ElleKit tweak injection libraries and loader
 Author: Evelyn
@@ -157,10 +157,10 @@ Replaces: org.theos.dependencies
 Provides: org.theos.dependencies
 Filename: debs/theos-dependencies_0-1_all.deb
 Size: 848
-MD5sum: 6382119ffdd1c7ad1d7b2ee10afbfd77
-SHA1: 5e319bf3e85a22905d54b79589f1e9a8e43f095f
-SHA256: 9b6d022de1b2b1bd25ce4413ec9c443320381705a8e8740c722214ba4d02733f
-Section: Tweak
+MD5sum: 955a85e1f8f8c5eca164844fdfc6dbdf
+SHA1: aaa517e468f7818f97f76b7c7b53326865c6cfe7
+SHA256: 42290f906d7b76cfc7e1301434418c48de71ab004cd2845d4d9b540a110562ee
+Section: 插件
 Priority: optional
 Description: What Theos needs.
 Name: Theos依赖
