@@ -68,6 +68,25 @@ Icon: https://invalidunit.github.io/sileodepiction/Default/image_terminal.png
 Name: mount_bindfs (Dopamine)
 Sileodepiction: https://invalidunit.github.io/sileodepiction/com.nan.bindfs/js.json
 
+Package: ellekit
+Version: 1.1.2
+Architecture: iphoneos-arm64
+Maintainer: Dhinak G <dhinak@dhinak.net>
+Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
+Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
+Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
+Filename: debs/ElleKit.1.1.2.deb
+Size: 337372
+MD5sum: 863b3f9685eefb2e9c69a02e9d148447
+SHA1: 649b4c8e84a8fc810d47322e620d28ab3aee8567
+SHA256: 8eb1f7abb811881b2afda107cebcc004fad007437558cef8f48a76ee8456b635
+Section: Tweak Injection
+Priority: optional
+Description: ElleKit tweak injection libraries and loader
+Author: Evelyn
+Icon: https://ellekit.space/logos/logo.png
+Name: ElleKit
+
 Package: jailbreak.lizi.repo
 Version: 1.0
 Architecture: iphoneos-arm64
@@ -109,6 +128,22 @@ Section: 汉化
 Priority: optional
 Description: 中文汉化插件
 Name: NewTerm3汉化（先装NewTerm）
+
+Package: preferenceloader
+Version: 2.2.7
+Architecture: iphoneos-arm64
+Maintainer: Dhinak G <dhinak@dhinak.net>
+Installed-Size: 370
+Depends: mobilesubstrate
+Filename: debs/PreferenceLoader.2.2.7.deb
+Size: 17544
+MD5sum: 28d52c87e10c1e077e205e0a079ff659
+SHA1: 44caca5c5036290609036cef11c2b3add5a50e1c
+SHA256: cf292c69efca97e1a5e8926853e3a84f4dac9933cb35ee2a2d6af302c848e096
+Section: System
+Description: load preferences in style
+Author: Dhinak G <dhinak@dhinak.net>
+Name: PreferenceLoader
 
 Package: theos-dependencies
 Version: 0-1
