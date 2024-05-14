@@ -75,12 +75,12 @@ Maintainer: Dhinak G <dhinak@dhinak.net>
 Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
 Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
 Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
-Filename: debs/ElleKit.1.1.2.deb
-Size: 337372
-MD5sum: 863b3f9685eefb2e9c69a02e9d148447
-SHA1: 649b4c8e84a8fc810d47322e620d28ab3aee8567
-SHA256: 8eb1f7abb811881b2afda107cebcc004fad007437558cef8f48a76ee8456b635
-Section: Tweak Injection
+Filename: debs/ellekit_1.1.2_iphoneos-arm64.deb
+Size: 337300
+MD5sum: e4928b2f2cdcae304ae13d289bb7ad9e
+SHA1: c66d6f0763218d02f89b89055720dc2478b5e987
+SHA256: 29e949c48e01025bb8e3c2d5829445260b2b7bd7b9a586a59a65d56c1c869e6b
+Section: Tweak
 Priority: optional
 Description: ElleKit tweak injection libraries and loader
 Author: Evelyn
@@ -135,12 +135,12 @@ Architecture: iphoneos-arm64
 Maintainer: Dhinak G <dhinak@dhinak.net>
 Installed-Size: 370
 Depends: mobilesubstrate
-Filename: debs/PreferenceLoader.2.2.7.deb
-Size: 17544
-MD5sum: 28d52c87e10c1e077e205e0a079ff659
-SHA1: 44caca5c5036290609036cef11c2b3add5a50e1c
-SHA256: cf292c69efca97e1a5e8926853e3a84f4dac9933cb35ee2a2d6af302c848e096
-Section: System
+Filename: debs/preferenceloader_2.2.7_iphoneos-arm64.deb
+Size: 17548
+MD5sum: 5fe8c9768d0008521401874e2452946f
+SHA1: e7c8581e77f417b4ae2c94c26adbaeedc0bcacc5
+SHA256: 21b316b64f7a9148520c85de31a7c588fe7f660c5049c1377e14e152746e8e87
+Section: 系统
 Description: load preferences in style
 Author: Dhinak G <dhinak@dhinak.net>
 Name: PreferenceLoader
@@ -155,15 +155,15 @@ Recommends: plutil, swift
 Conflicts: org.theos.dependencies
 Replaces: org.theos.dependencies
 Provides: org.theos.dependencies
-Filename: debs/theos-dependencies.0-1.deb
-Size: 840
-MD5sum: d27817410d011e9fdcc5de40f0719351
-SHA1: 64de9d557af858b7210abbf7513a3c92a109f97e
-SHA256: 6e4fd3d3790e592dcb774118391d772bda16552945f1a08999d84638b6b1acef
-Section: Development
+Filename: debs/theos-dependencies_0-1_all.deb
+Size: 848
+MD5sum: 6382119ffdd1c7ad1d7b2ee10afbfd77
+SHA1: 5e319bf3e85a22905d54b79589f1e9a8e43f095f
+SHA256: 9b6d022de1b2b1bd25ce4413ec9c443320381705a8e8740c722214ba4d02733f
+Section: Tweak
 Priority: optional
 Description: What Theos needs.
-Name: theos-dependencies
+Name: Theos依赖
 
 Package: tweaktool
 Version: 2.0.0-beta
