@@ -1,5 +1,5 @@
 #!/var/jb/usr/bin/bash
-echo "bilibili@玩游戏的李子-"
+echo "小杨爱孜然味的小羊"
 echo "开始推送"
 git add .
 echo "上传状态"
