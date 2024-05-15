@@ -88,6 +88,26 @@ Depiction: https://chariz.com/get/cask-3
 Icon: https://img.chariz.cloud/icon/cask-3/icon@3x.png
 Name: Cask 3
 
+Package: dev.theos.orion14
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: Theos Team <support@theos.dev>
+Installed-Size: 514
+Depends: firmware (>= 14.0), firmware (<< 17.0), mobilesubstrate (>= 0.9.5000)
+Provides: dev.theos.orion (= 1.0.1)
+Filename: debs/OrionRuntimeiOS14–16.1.0.1.deb
+Size: 93552
+MD5sum: 7b4016109d0deabbb3bd5cd48524e598
+SHA1: ba21712104152360d912afefc04a9ec3c2216f4f
+SHA256: 36b2579f1594cccaeacc35254bd6a0bdf57ffd9bfe2dc9218dc55ea8955ae62c
+Section: System
+Description: Runtime for tweaks built using Orion and Swift
+Tag: role::developer, compatible_min::ios14.0
+Author: Theos Team <support@theos.dev>
+Depiction: https://chariz.com/get/orion-runtime14
+Icon: https://img.chariz.cloud/icon/orion-runtime14/icon@3x.png
+Name: Orion Runtime (iOS 14 – 16)
+
 Package: ellekit
 Version: 1.1.2
 Architecture: iphoneos-arm64
