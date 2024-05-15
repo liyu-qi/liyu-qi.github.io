@@ -95,12 +95,12 @@ Maintainer: Theos Team <support@theos.dev>
 Installed-Size: 514
 Depends: firmware (>= 14.0), firmware (<< 17.0), mobilesubstrate (>= 0.9.5000)
 Provides: dev.theos.orion (= 1.0.1)
-Filename: debs/OrionRuntimeiOS14–16.1.0.1.deb
-Size: 93552
-MD5sum: 7b4016109d0deabbb3bd5cd48524e598
-SHA1: ba21712104152360d912afefc04a9ec3c2216f4f
-SHA256: 36b2579f1594cccaeacc35254bd6a0bdf57ffd9bfe2dc9218dc55ea8955ae62c
-Section: System
+Filename: debs/dev.theos.orion14_1.0.1_iphoneos-arm64.deb
+Size: 93496
+MD5sum: 04765042c8158f0cbb41d8176ab98461
+SHA1: 2b5dfa7693b4be295ca9a908ad4c88916bd79847
+SHA256: 6ad3e366ffe33199304037dbc4a62e8dd50e6a40bd5cc2005b9ec24fda2695f1
+Section: 系统
 Description: Runtime for tweaks built using Orion and Swift
 Tag: role::developer, compatible_min::ios14.0
 Author: Theos Team <support@theos.dev>
