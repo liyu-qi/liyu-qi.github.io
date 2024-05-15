@@ -1,9 +1,9 @@
-Origin: opa334's Repo
-Label: opa334's Repo
+Origin: xiaoyang's Repo
+Label: xiaoyang's Repo
 Suite: stable
 Version: 1.0
-Codename: opa334
-Architectures: iphoneos-arm iphoneos-arm64
+Codename: xiaoyang
+Architectures: iphoneos-arm64
 Components: main
-Description: opa334's Cydia Repository
+Description: xiaoyang's Sileo Repository
 Icon: file://CydiaIcon.png
