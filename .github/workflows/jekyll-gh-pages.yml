@@ -22,7 +22,7 @@ jobs:
           git config --global user.name "GitHub Action"  # 配置 Git 用户信息
 
       - name: Sync with Remote
-        run: git pull origin main  # 同步远程仓库的变更到当前分支
+        run: git pull origin master  # 同步远程仓库的变更到当前分支
 
       - name: Install dpkg
         run: sudo apt-get update && sudo apt-get install -y dpkg  # 安装 dpkg 软件包管理器
