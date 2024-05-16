@@ -4,6 +4,6 @@ Suite: stable
 Version: 1.0
 Codename: xiaoyang
 Architectures: iphoneos-arm64
-Components: main
+Components: master
 Description: xiaoyang's Sileo Repository
 Icon: file://CydiaIcon.png
