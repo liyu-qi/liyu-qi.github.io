@@ -30,3 +30,19 @@ Description: 支付宝去除底部理财选项(理财是不可能理财的, 只�
 Author: Netskao
 Name: 支付宝 Hooks-Rootless
 
+Package: netskao.batterypercentx-rootless
+Version: 1.1-1
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 168
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/netskao.batterypercentx-rootless_1.1-1_iphoneos-arm64.deb
+Size: 5936
+MD5sum: c80ad5d3cbde99ae284d0127099ea9a7
+SHA1: 8fc779635de3f240e42f771e7795fc0cb209f300
+SHA256: 5874d57813970fa941068aca1cf07a2d47c0761df9ef015da11d4977d06099d1
+Section: Netskao-Tweaks
+Description: BatteryPercentX启用系统原生电池百分比，加深边框颜色，加深充电时电池颜色
+Author: Netskao
+Name: BatteryPercentX-Rootless
+
