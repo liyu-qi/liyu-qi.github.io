@@ -4,37 +4,43 @@ name: Update Sileo Repository
 on: 
   push:
     branches: 
-      - master  # 请根据需要修改为你仓库的默认分支名称
+      - master  # 请根据实际情况替换你所使用的分支名称
     paths:
-      - 'debs/*.deb'  # 监控 /debs/ 文件夹下的所有.deb文件的上传
+      - 'debs/*.deb'  # 当 .deb 文件被推送到这个路径时触发工作流
 
 jobs:
-  update-repo:
-    runs-on: ubuntu-latest  # 使用最新ubuntu环境
+  build-and-push:
+    runs-on: ubuntu-latest  # 使用最新版本的 Ubuntu 运行作业
 
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v2  # 检出仓库代码
-
-      - name: Install dpkg
-        run: sudo apt-get update && sudo apt-get install -y dpkg
-
-      - name: Generate Packages file
-        run: |
-          dpkg-scanpackages --multiversion debs >> Packages
-          cat Packages | bzip2 > Packages.bz2
-          cat Packages | gzip > Packages.gz
-
-      - name: Pull Changes
-        run: git pull origin main  # 拉取远程库的最新改动
-     
-      - name: Push Updates
+      
+      - name: Set up Git
         run: |
           git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
-          git add -f Packages Packages.gz Packages.bz2
-          git commit -m "Update Sileo Packages"
-          git push origin main     # 推送合并后的改动到远程
-          git push  # 推送更新到仓库
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用GitHub自动生成的Token进行操作
+          git config --global user.name "GitHub Action"  # 配置 Git 用户信息
+
+      - name: Sync with Remote
+        run: git pull origin main  # 同步远程仓库的变更到当前分支
+
+      - name: Install dpkg
+        run: sudo apt-get update && sudo apt-get install -y dpkg  # 安装 dpkg 软件包管理器
+      
+      - name: Generate Packages file
+        run: |
+          dpkg-scanpackages --multiversion debs >> Packages  # 使用 dpkg-scanpackages 来生成 Packages 文件
+          cat Packages | gzip > Packages.gz  # 对 Packages 文件进行压缩
+          cat Packages | bzip2 > Packages.bz2  # 同时创建 bzip2 压缩文件
+
+      - name: Commit files
+        run: |
+          git add Packages Packages.gz Packages.bz2  # 添加修改后的文件到 Git
+          git commit -m "Automatically update packages" -a  # 提交更改
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master  # 这是一个 Action 用于推送更改到GitHub
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+
