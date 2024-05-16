@@ -127,6 +127,22 @@ Author: Evelyn
 Icon: https://ellekit.space/logos/logo.png
 Name: ElleKit
 
+Package: git
+Version: 2.39.1
+Architecture: iphoneos-arm64
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 29680
+Depends: libiosexec1 (>= 1.2.2), libcurl4, libssl3, libintl8, libpcre2-8-0, libidn2-0, firmware (>= 14.0) | libexpat1, pager
+Filename: debs/git.2.39.1.deb
+Size: 6919132
+MD5sum: 343bd549852e58777f49779505d16926
+SHA1: 8a998144c483938f32f48f272db78f2f53cf8a4a
+SHA256: 03148575b87ebc6183ffce696f709fbb47a53ad719092cca1ac499c16cffdced
+Section: Data_Storage
+Priority: optional
+Description: fast, scalable, distributed revision control system
+Name: git
+
 Package: jailbreak.lizi.repo
 Version: 1.0
 Architecture: iphoneos-arm64
@@ -189,6 +205,22 @@ Description: Shows System Information with Distribution Logo
 Author: Dylan Araps <dylan.araps@gmail.com>
 Name: neofetch
 
+Package: openssh
+Version: 1:0
+Architecture: iphoneos-arm64
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 8
+Depends: openssh-client, openssh-server, openssh-sftp-server
+Filename: debs/openssh.1:0.deb
+Size: 762544
+MD5sum: 5620b964d6419d35b74415c3013f7481
+SHA1: b6ddb8226b54d17cf3b670c7be4b586c0b86e23a
+SHA256: d3e78922dae034369b9476333a1d02ffb8c893e8452cbcbf5d101f5589973553
+Section: Networking
+Priority: important
+Description: secure shell client and server (metapackage)
+Name: openssh
+
 Package: preferenceloader
 Version: 2.2.7
 Architecture: iphoneos-arm64
@@ -239,6 +271,22 @@ Section: Tweaks
 Description: 适合xina和多巴胺越狱的插件及其配置的一键备份恢复工具。Filza进入/var/mobile/tweak_tool/目录，运行“一键备份和恢复工具.sh”文件即可。
 Author: 预言小猫
 Name: 一键备份和恢复工具-Rootless
+
+Package: wget
+Version: 1.21.3-1
+Architecture: iphoneos-arm64
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 596
+Depends: libiosexec1 (>= 1.2.2), libssl3, libpcre2-8-0, libintl8, libunistring5, libidn2-0
+Filename: debs/wget.1.21.3-1.deb
+Size: 247332
+MD5sum: ce1f3c8309cd095fefa8f6ce424a8fb1
+SHA1: 953027e6900cb7c7ec7ab3a1ecfaf52ad10c3f19
+SHA256: 1adfe768b65831803ab24985b6eec46e971bed89b35cd37e19a15f3141145edc
+Section: Networking
+Priority: important
+Description: retrieves files from the web
+Name: wget
 
 Package: ws.hbang.alderis
 Version: 1.2.3
