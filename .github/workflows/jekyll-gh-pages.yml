@@ -29,6 +29,9 @@ jobs:
       
       - name: Generate Packages file
         run: |
+          rm -r Packages
+          rm -r Packages.bz2
+          rm -r Packages.gz
           dpkg-scanpackages --multiversion debs >> Packages  # 使用 dpkg-scanpackages 来生成 Packages 文件
           cat Packages | gzip > Packages.gz  # 对 Packages 文件进行压缩
           cat Packages | bzip2 > Packages.bz2  # 同时创建 bzip2 压缩文件
