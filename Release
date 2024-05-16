@@ -5,5 +5,5 @@ Version: 1.0
 Codename: 玩游戏的李子-
 Architectures: iphoneos-arm64 iphoneos-arm64e
 Components: main
-Description: lizi's Cydia Repository
-Icon: file://CydiaIcon.png
+Description: lizi's Sileo Repository
+Icon: file://SileoIcon.png
