@@ -27,7 +27,7 @@ jobs:
         run: |
           git config --global user.email "7400749@qq.com"       # 设置git用户邮箱
           git config --global user.name "QQ7400749"              # 设置git用户名
-          git add Packages Packages.gz                           # 添加Packages 和 Packages.gz 文件到git
+          git add Packages Packages.gz Packages.bz2              # 添加Packages Packages.gz 和 Packages.bz2 文件到git
           git commit -m "Automatically update Packages"          # 提交更改
           git push                                               # 推送更改回GitHub仓库
         env:
