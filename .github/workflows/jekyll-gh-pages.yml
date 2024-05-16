@@ -1,51 +1,34 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Update Sileo Packages
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  push:                                 # 当发生 push 事件时触发
+    paths:                             # 仅当以下路径有文件变动时
+      - 'debs/*.deb'                    # 监控 debs 文件夹下的任意 .deb 文件
 
 jobs:
-  # Build job
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+    runs-on: ubuntu-latest              # 运行工作流的虚拟机环境
 
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v2       # 检出仓库代码
+
+      - name: Install dpkg
+        run: sudo apt-get update && sudo apt-get install -y dpkg  # 安装 dpkg
+
+      - name: Generate Packages file
+        run: |
+          dpkg-scanpackages --multiversion debs >> Packages       # 运行dpkg-scanpackages生成Packages
+          cat Packages | bzip2 > Packages.bz2                     # 压缩Packages文件为Packages.bz2
+          cat Packages | gzip > Packages.gz                       # 压缩Packages文件为Packages.gz
+
+      - name: Commit and Push Packages files
+        run: |
+          git config --global user.email "7400749@qq.com"       # 设置git用户邮箱
+          git config --global user.name "QQ7400749"              # 设置git用户名
+          git add Packages Packages.gz                           # 添加Packages 和 Packages.gz 文件到git
+          git commit -m "Automatically update Packages"          # 提交更改
+          git push                                               # 推送更改回GitHub仓库
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}             # 使用GitHub token进行身份验证
