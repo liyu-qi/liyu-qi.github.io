@@ -4,7 +4,7 @@ Architecture: iphoneos-arm64
 Maintainer: Nets
 Installed-Size: 328
 Depends: firmware (>= 15.0), mobilesubstrate
-Filename: ./netskao.alipayhooks-rootless_1.1-3_iphoneos-arm64.deb
+Filename: debs/netskao.alipayhooks-rootless_1.1-3_iphoneos-arm64.deb
 Size: 72548
 MD5sum: 8f29c3210d8fde504f7b8713d817c52b
 SHA1: 0f72fdf71c5bdd08833ef4f5d137833242a6f45e
