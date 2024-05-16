@@ -169,6 +169,26 @@ Priority: optional
 Description: 中文汉化插件
 Name: NewTerm3汉化（先装NewTerm）
 
+Package: neofetch
+Version: 7.1.0+20220216.ccd5d9f
+Architecture: iphoneos-arm64
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 384
+Depends: bash (>= 5.0), awk
+Conflicts: com.matdev.neofetch-ios
+Replaces: com.matdev.neofetch-ios
+Filename: debs/neofetch.7.1.0+20220216.ccd5d9f.deb
+Size: 88308
+MD5sum: 62e0da1f819e56e1b2d75d42ea86d88f
+SHA1: 4122e248e9d1b1ee459c484749fc7327472a62a1
+SHA256: 719660bb78cfaea7709e6984d3d3d4b959ff8b8fe586d966cf71df5a91390a75
+Section: Utilities
+Priority: optional
+Homepage: https://github.com/dylanaraps/neofetch
+Description: Shows System Information with Distribution Logo
+Author: Dylan Araps <dylan.araps@gmail.com>
+Name: neofetch
+
 Package: preferenceloader
 Version: 2.2.7
 Architecture: iphoneos-arm64
