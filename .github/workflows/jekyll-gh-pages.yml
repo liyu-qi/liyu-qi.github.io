@@ -4,7 +4,7 @@ name: Update Sileo Repository
 on: 
   push:
     branches: 
-      - main  # 请根据需要修改为你仓库的默认分支名称
+      - master  # 请根据需要修改为你仓库的默认分支名称
     paths:
       - 'debs/*.deb'  # 监控 /debs/ 文件夹下的所有.deb文件的上传
 
