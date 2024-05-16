@@ -1,34 +1,36 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Update Sileo Packages
+name: Update Sileo Repository
 
-on:
-  push:                                 # 当发生 push 事件时触发
-    paths:                             # 仅当以下路径有文件变动时
-      - 'debs/*.deb'                    # 监控 debs 文件夹下的任意 .deb 文件
+on: 
+  push:
+    branches: 
+      - main  # 请根据需要修改为你仓库的默认分支名称
+    paths:
+      - 'debs/*.deb'  # 监控 /debs/ 文件夹下的所有.deb文件的上传
 
 jobs:
-  build:
-    runs-on: ubuntu-latest              # 运行工作流的虚拟机环境
+  update-repo:
+    runs-on: ubuntu-latest  # 使用最新ubuntu环境
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2       # 检出仓库代码
+      - name: Checkout
+        uses: actions/checkout@v2  # 检出仓库代码
 
       - name: Install dpkg
-        run: sudo apt-get update && sudo apt-get install -y dpkg  # 安装 dpkg
+        run: sudo apt-get update && sudo apt-get install -y dpkg
 
       - name: Generate Packages file
         run: |
-          dpkg-scanpackages --multiversion debs >> Packages       # 运行dpkg-scanpackages生成Packages
-          cat Packages | bzip2 > Packages.bz2                     # 压缩Packages文件为Packages.bz2
-          cat Packages | gzip > Packages.gz                       # 压缩Packages文件为Packages.gz
+          dpkg-scanpackages --multiversion debs >> Packages
+          cat Packages | bzip2 > Packages.bz2
+          cat Packages | gzip > Packages.gz
 
-      - name: Commit and Push Packages files
+      - name: Push Updates
         run: |
-          git config --global user.email "7400749@qq.com"       # 设置git用户邮箱
-          git config --global user.name "QQ7400749"              # 设置git用户名
-          git add Packages Packages.gz Packages.bz2              # 添加Packages Packages.gz 和 Packages.bz2 文件到git
-          git commit -m "Automatically update Packages"          # 提交更改
-          git push                                               # 推送更改回GitHub仓库
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add -f Packages Packages.gz Packages.bz2
+          git commit -m "Update Sileo Packages"
+          git push  # 推送更新到仓库
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}             # 使用GitHub token进行身份验证
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用GitHub自动生成的Token进行操作
