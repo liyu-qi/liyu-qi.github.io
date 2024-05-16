@@ -25,12 +25,16 @@ jobs:
           cat Packages | bzip2 > Packages.bz2
           cat Packages | gzip > Packages.gz
 
+      - name: Pull Changes
+        run: git pull origin main  # 拉取远程库的最新改动
+     
       - name: Push Updates
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add -f Packages Packages.gz Packages.bz2
           git commit -m "Update Sileo Packages"
+          git push origin main     # 推送合并后的改动到远程
           git push  # 推送更新到仓库
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用GitHub自动生成的Token进行操作
