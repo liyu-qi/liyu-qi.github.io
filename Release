@@ -1,9 +1,9 @@
-Origin: 李子源
-Label: 李子源
+Origin: wency 源
+Label: wency 源
 Suite: stable
 Version: 1.0
-Codename: 玩游戏的李子-
-Architectures: iphoneos-arm64
+Codename: 380TSI-qi
+Architectures: iphoneos-arm iphoneos-arm64
 Components: main
-Description: lizi's Sileo Repository
+Description: wency
 Icon: file://CydiaIcon.png
