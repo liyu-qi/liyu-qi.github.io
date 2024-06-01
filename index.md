@@ -18,12 +18,12 @@
   <h2 id="jailbreak">又是深情的一天</h2>
 	<p>微信：Yan-wency<a>
   <h2 id="jailbreak">越狱</h2>
-  <a href="https://wency-qi.github.io/Dopamine-jailbreak/">Dopamine专区iOS15-16.6.1</a><br>
-  <a href="https://wency-qi.github.io/meowbrek-jailbreak/">meowbrek2专区iOS15.x</a>
+  <a href="https://https://https://wency920.github.io/wency/wency/Dopamine-jailbreak/">Dopamine专区iOS15-16.6.1</a><br>
+  <a href="https://https://https://wency920.github.io/wency//wency/meowbrek-jailbreak/">meowbrek2专区iOS15.x</a>
 	<p>又是深情的一天</p>
-	<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://wency-qi.github.io/">添加Cydia</a><br>
-	<a href="sileo://source/https://wency-qi.github.io/">添加Sileo</a><br>
-	<a href="zbra://sources/add/https://wency-qi.github.io/">添加Zebra</a>
+	<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://https://wency920.github.io/wency/">添加Cydia</a><br>
+	<a href="sileo://source/https://https://wency920.github.io/wency/">添加Sileo</a><br>
+	<a href="zbra://sources/add/https://https://wency920.github.io/wency/">添加Zebra</a>
 
   <p>又是深情的一天-私人源</p>
 </div>
